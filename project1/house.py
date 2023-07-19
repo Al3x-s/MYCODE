@@ -71,7 +71,7 @@ answers = []
 for i in range(len(questions)):
     answer = ask_question(questions[i], options[i])
     answers.append(answer)
-
+    print("--------------------------------------------------")
 house = determine_house(answers)
 
 print("the hat decided!, you should be sorted into the following Hogwarts house:")
