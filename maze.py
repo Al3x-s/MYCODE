@@ -1,4 +1,5 @@
 import random
+MAZE_SIZE = 10
 WALL = "#"
 EMPTY = " "
 START = "S"
