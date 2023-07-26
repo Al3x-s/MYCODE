@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import requests
 
+from datetime import datetime, timedelta
 ## Define NEOW URL
 NEOURL = "https://api.nasa.gov/neo/rest/v1/feed?"
 
@@ -36,7 +37,6 @@ def returncreds():
  #   print(neodata)
 
 
-from datetime import datetime, timedelta
 
 def get_dates_between(start_date, end_date):
     date_format = "%Y-%m-%d"
