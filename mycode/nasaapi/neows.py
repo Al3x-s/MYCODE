@@ -81,6 +81,9 @@ def get_data_from_date_range():
     nasacreds = returncreds()
     apireq = requests.get(f"https://api.nasa.gov/neo/rest/v1/feed?start_date={start_date_input}&end_date={end_date_input}&{nasacreds}")
     neodata = apireq.json()
+
+    # create new base url
+
     print("thisworked part 2")
     datelist = get_dates_between(start_date_input, end_date_input)
     for i in range(len(datelist)):
