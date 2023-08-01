@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""RZFeeser | Alta3 Research
-   Running a simulation with our classes"""
+"""RZFeeser | Alta3 Research :w Running a simulation with our classes"""
 
 # import our classes
 from cheat import *
@@ -12,6 +11,12 @@ def main():
     swapper = Cheat_Swapper()
     # the player known as the loaded_dice
     loaded_dice = Cheat_Loaded_Dice()
+    #player known as odd
+    oddplayer = Oddlast()
+    #player known as even
+    evenplayer = Evenlast()
+    #player known as 
+    
 
     # track scores for both players
     swapper_score = 0
@@ -27,7 +32,13 @@ def main():
     while game_number < number_of_games:
         swapper.roll()
         loaded_dice.roll()
-
+        #------------------
+        oddplayer.roll()
+        evenplayer.roll()
+        
+        oddplayer.cheat()
+        evenplayer.cheat()
+        #-------------
         swapper.cheat()
         loaded_dice.cheat()
         """Remove # before print statements to see simulation running
@@ -55,7 +66,9 @@ def main():
     print("------------")
     print(f"Swapper won: {swapper_score}")
     print(f"Loaded dice won: {loaded_dice_score}")
-
+    #----------------
+    print(f"oddplayer rolls {oddplayer.get_dice()}")
+    print(f"evenplayer rolls {evenplayer.get_dice()}")
     # determine the winner
     if swapper_score == loaded_dice_score:
         print("Game was drawn")
@@ -66,4 +79,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-https://live.alta3.com/content/pyb/labs/content/pyb/LAB_email_smtplib_getpass_send-email.html

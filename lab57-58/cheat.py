@@ -6,7 +6,7 @@
 
 # standard library
 from random import randint
-
+import random
 class Player:
     def __init__(self):
         self.dice = []
