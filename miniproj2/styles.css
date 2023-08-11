@@ -3,14 +3,20 @@
     margin: auto;
 }
 h1{
-    width: 12%;
+    top:10vh;
+    font-size:10vh;
+    width: 38%;
+    color:white;
 }
 .card{
     display: flex;
     width: 25%;
     justify-content: space-evenly;
-    color: white;
+    color: pink;
+    height:50%;
+    margin-top:10vh;
 }
 body{
-	background-color:	#303030;
+    background-image:url("asdf.jpg")
 }
+
