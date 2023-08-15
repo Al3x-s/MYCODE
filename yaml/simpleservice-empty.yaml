@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Pod            # example Pod / Deployment
+metadata:
+  name: simpleservice-web         # name to apply
+  labels:
+    name: simpleservice-web       # label name
+spec:
+  containers:
+    - name: simpleservice-web      # name of container
+      image: mhausblas/simpleservice:0.5.0      # image to use if no URL provided hub.docker.com is used
+      ports:
+      - name: web      # port name
+        containerPort: 9876      # access on this port (int)
+        protocol: TCP           # TCP or UDP
